@@ -1,0 +1,23 @@
+import 'package:passi_scan/models/screen_args/screen_args.dart';
+
+class ErrorsScreenArgs implements ScreenArgs {
+  late final String error;
+
+  ErrorsScreenArgs({required this.error});
+
+  @override
+  Map<String, dynamic> queryParams() {
+    return {
+      'error': error,
+    };
+  }
+
+  ErrorsScreenArgs.fromJson(Map<String, dynamic> json) {
+    error = json['error'];
+  }
+
+  @override
+  Map<String, String> params() {
+    return {};
+  }
+}

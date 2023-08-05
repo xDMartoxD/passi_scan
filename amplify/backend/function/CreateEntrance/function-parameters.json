@@ -1,0 +1,77 @@
+{
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "passiModelsLayer",
+      "version": "Always choose latest version",
+      "isLatestVersionSelected": true,
+      "env": "prod"
+    },
+    {
+      "type": "ProjectLayer",
+      "resourceName": "passiWompiLayer",
+      "version": "Always choose latest version",
+      "isLatestVersionSelected": true,
+      "env": "prod"
+    },
+    {
+      "type": "ProjectLayer",
+      "resourceName": "passinodeModules",
+      "version": "Always choose latest version",
+      "isLatestVersionSelected": true,
+      "env": "prod"
+    }
+  ],
+  "permissions": {
+    "storage": {
+      "Job:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "User:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "PaymentMethod:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "Ticket:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "Event:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "TicketCategory:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "EventCategory:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ],
+      "DiscountCode:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  }
+}

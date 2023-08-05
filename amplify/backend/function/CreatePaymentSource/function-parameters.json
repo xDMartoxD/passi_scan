@@ -1,0 +1,27 @@
+{
+  "lambdaLayers": [
+    {
+      "type": "ProjectLayer",
+      "resourceName": "passinodeModules",
+      "version": "Always choose latest version",
+      "isLatestVersionSelected": true,
+      "env": "prod"
+    }
+  ],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "auth",
+      "environmentVariableName": "AUTH"
+    }
+  ],
+  "permissions": {
+    "storage": {
+      "PaymentMethod:@model(appsync)": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  }
+}

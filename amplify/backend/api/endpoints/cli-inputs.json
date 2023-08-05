@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "paths": {
+    "/validate": {
+      "name": "/validate",
+      "lambdaFunction": "validateTicket",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/validateEvent": {
+      "name": "/validateEvent",
+      "lambdaFunction": "verifyEvent",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/create-payment-source": {
+      "name": "/create-payment-source",
+      "lambdaFunction": "CreatePaymentSource",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    },
+    "/create-entrance": {
+      "name": "/create-entrance",
+      "lambdaFunction": "CreateEntrance",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    }
+  }
+}
